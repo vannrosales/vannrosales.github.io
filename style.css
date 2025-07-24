@@ -178,6 +178,34 @@ body {
     color: #00cc66;
     transform: scale(1.2);
   }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .tech-item {
+    text-align: center;
+    color: #00ff00;
+    max-width: 90px;
+  }
+  
+  .tech-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 0 5px #00ff00);
+  }
+  
+  .tech-item img:hover {
+    transform: scale(1.1);
+  }
+  
   
   
   /* === Responsive === */
@@ -207,12 +235,21 @@ body {
     }
   
     .profile-pic {
-      width: 150px;
-      height: 210px;
+      width: 200px;
+      height: 280px;
     }
-  
+
     .typing-container {
       font-size: 1.2rem;
+    }
+
+    .tech-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .tech-item p {
+      font-size: 0.9rem;
     }
   }
 
@@ -220,6 +257,11 @@ body {
   @media (min-width: 769px) and (max-width: 1024px) {
     .typing-container {
       font-size: 1.6rem;
+    }
+
+    .profile-pic {
+      width: 220px;
+      height: 310px;
     }
   }
   
