@@ -1,0 +1,231 @@
+/* === Base Styles === */
+body {
+    background: linear-gradient(to bottom, #0a0a0a 0%, #000 100%);
+    color: #00ff99;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* === Navbar === */
+  .navbar {
+    background-color: #0a0a0a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00cc66;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 255, 153, 0.1);
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    color: #00ff99;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00cc66;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #00ff99;
+    cursor: pointer;
+  }
+  
+  /* === Main Section === */
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* === Typing Effect === */
+  .typing-container {
+    font-size: 1.8rem;
+    border-right: 2px solid #00ff99;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 90vw;
+    padding: 0 1rem;
+    animation: blink 0.75s step-end infinite;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: #00ff99; }
+    50% { border-color: transparent; }
+  }
+  
+  /* === Profile Portrait === */
+  .profile-pic {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #00cc66;
+    margin-bottom: 20px;
+    background: rgba(0, 255, 153, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.3);
+  }
+  
+  /* === Sections === */
+  .section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #00ff99;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00cc66;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccffcc;
+  }
+  
+  /* === Projects === */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: rgba(0, 255, 153, 0.05);
+    border: 1px solid #00cc66;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 10px;
+    color: #00ff99;
+  }
+  
+  .project-card p {
+    color: #ccffcc;
+  }
+  
+  /* === Links === */
+  a {
+    color: #00ff99;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* === Social Media Icons === */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #00ff99;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #00cc66;
+    transform: scale(1.2);
+  }
+  
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #0a0a0a;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border: 1px solid #00cc66;
+      padding: 1rem;
+      z-index: 999;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-brand {
+      font-size: 1.3rem;
+    }
+  
+    .profile-pic {
+      width: 150px;
+      height: 210px;
+    }
+  
+    .typing-container {
+      font-size: 1.2rem;
+    }
+  }
+
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .typing-container {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .typing-container {
+      font-size: 1.8rem;
+    }
+  }
+  

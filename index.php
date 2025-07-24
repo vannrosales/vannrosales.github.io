@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vann Tech Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">Vann Tech</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section class="main-container" id="home">
+    <div class="content">
+      <img src="profile-pic.png" alt="My Profile" class="profile-pic" />
+      <div class="typing-container" id="typingText"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Vann, a passionate developer who loves building web apps, solving real-world problems,
+      and learning new technologies like PHP, CodeIgniter, and AI.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>Built with CodeIgniter 4 and MySQL. Features include book tracking, PDF viewer, and report submission.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>A real-time chatbot using Cohere API, implemented in PHP with minimal frontend dependencies.</p>
+      </div>
+        <div class="project-card">
+            <h3>iESMS</h3>
+            <p>Integrated Extension Services Management System for EVSU. Manages extension projects, reports, and workflows.</p>
+        </div>
+        <div class="project-card">
+            <h3>Dean's Office System</h3>
+            <p>A web app to manage faculty reports, analytics, and submissions within the academic dean's office. Built using CodeIgniter and MySQL.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:rosalesjuvan1108@gmail.com">rosalesjuvan1108@gmail.com</a></p>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/nnav.08" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/awsdvann/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@nnavvlr?lang=en" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+</section>
+
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
