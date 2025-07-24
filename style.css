@@ -139,6 +139,12 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(6px);
     box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.4);
   }
   
   .project-card h3 {
