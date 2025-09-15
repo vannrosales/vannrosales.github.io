@@ -1,136 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vann Tech Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vann Tech - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+<link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-brand">Vann Tech</div>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#tech">Tech</a></li>
-    </ul>
-  </nav>
+  <!--
+    - #MAIN
+  -->
 
-  <!-- HOME -->
-  <section class="main-container" id="home">
-    <div class="content">
-      <img src="profile-pic.png" alt="My Profile" class="profile-pic" />
-      <div class="typing-container" id="typingText"></div>
-    </div>
-  </section>
+  <main>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm Vann, a passionate developer who loves building web apps, solving real-world problems,
-      and learning new technologies like PHP, CodeIgniter, and AI.
-    </p>
-  </section>
+    <!--
+      - #SIDEBAR
+    -->
 
-  <!-- ACHIEVEMENTS -->
-<section class="section" id="achievements">
-  <h2>Achievements</h2>
-  <ul style="list-style: none; padding-left: 0; color: #ccffcc;">
-    <li>🎓 BSIT Degree Holder - EVSU</li>
-    <li>🏅 Graduated as <strong>Cum Laude</strong></li>
-    <li>📚 <strong>Best in Thesis</strong> Awardee</li>
-    <li>💻 <strong>Best in OJT</strong> - Developed 3 full-featured systems</li>
-  </ul>
-</section>
+    <aside class="sidebar" data-sidebar>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Library Management System</h3>
-        <p>Built with CodeIgniter 4 and MySQL. Features include book tracking, PDF viewer, and report submission.</p>
-      </div>
-      <div class="project-card">
-        <h3>AI Chatbot</h3>
-        <p>A real-time chatbot using Cohere API, implemented in PHP with minimal frontend dependencies.</p>
-      </div>
-        <div class="project-card">
-            <h3>iESMS</h3>
-            <p>Integrated Extension Services Management System for EVSU. Manages extension projects, reports, and workflows.</p>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="profile-pic.png" alt="Giovanni Hanz Guino" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Giovanni Hanz Guino">Giovanni Hanz Guino</h1>
+
+          <p class="title">Web developer</p>
         </div>
-        <div class="project-card">
-            <h3>Dean's Office System</h3>
-            <p>A web app to manage faculty reports, analytics, and submissions within the academic dean's office. Built using CodeIgniter and MySQL.</p>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+            
+              <a href="mailto:giovannihanzguino@gmail.com" class="contact-link">
+                giovannihanzguino@gmail.com
+              </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+639513663264" class="contact-link">+639513663264</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-11-08">November 8, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tacloban City, Leyte, PH</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am Giovanni Hanz Guino, a Bachelor of Science in Information Technology graduate with Cum Laude honors, specializing in web application development utilizing PHP (CodeIgniter), HTML, CSS, and MySQL database systems. 
+            I am dedicated to building responsive, user-centric, and data-driven systems with an emphasis on clean code and optimal performance. 
+            Committed to full-stack development and lifelong learning, I continuously seek to enhance my skills and deliver high-quality, maintainable web applications.
+          </p>
+
+          <p>
+            My job is to build websites that are functional, user-friendly, and visually appealing. 
+            I add a personal touch to ensure your product is eye-catching and easy to use, 
+            effectively conveying your message and identity. I have designed websites for several well-known brands.
+          </p>
+        </section>
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+        
+          <ul class="service-list">
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="web-design-svgrepo-com.svg" alt="design icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design</h4>
+        
+                <p class="service-item-text">
+                  Creating sleek, contemporary designs that blend creativity and professionalism to captivate your audience.”
+                </p>
+              </div>
+        
+            </li>
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="web-development-svgrepo-com.svg" alt="Web development icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+        
+                <p class="service-item-text">
+                  Delivering cutting-edge, scalable websites crafted with precision and innovation to elevate your brand’s digital presence.
+                </p>
+              </div>
+        
+            </li>
+        
+        
+            <li class="service-item">
+        
+              <div class="service-icon-box">
+                <img src="technical-support-technical-support-svgrepo-com.svg" alt="technical support icon" width="40">
+              </div>
+        
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technical Support</h4>
+        
+                <p class="service-item-text">
+                  Troubleshooting PC hardware and software issues, providing solutions for web app development, and supporting web design implementation.
+                </p>
+              </div>
+        
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+
+        <section class="service">
+          <h3 class="h3 service-title">Tech Stack</h3>
+        
+          <ul class="service-list" style="display: flex; gap: 30px; flex-wrap: wrap; list-style: none; padding: 0;">
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="new-php-logo.svg" alt="PHP icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 30px;">PHP</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="codeigniter.svg" alt="CodeIgniter icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 8px;">CodeIgniter</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="laravel-2.svg" alt="Laravel icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 15px;">Laravel</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="js-svgrepo-com.svg" alt="JavaScript icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 10px;">JavaScript</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="html-5-svgrepo-com.svg" alt="Node.js icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 10px;">HTML</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="database-svgrepo-com.svg" alt="MySQL icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 10px;">MySQL</h4>
+            </li>
+        
+            <li class="service-item" style="display: flex; flex-direction: column; align-items: center; width: 140px;">
+              <div class="service-icon-box">
+                <img src="git-svgrepo-com.svg" alt="Git icon" width="40" />
+              </div>
+              <h4 class="h4 service-item-title" style="margin-top: 10px;">Git</h4>
+            </li>
+        
+          </ul>
+        </section>
+        
+        
+        
+
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-    </div>
-  </section>
-
-  <!-- TECH STACK -->
-<section class="section" id="tech">
-  <h2>Tech Stack</h2>
-  <div class="tech-icons">
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-      <p>HTML5</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-      <p>CSS3</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-      <p>JavaScript</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-      <p>PHP</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
-      <p>C#</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter">
-      <p>CodeIgniter 4</p>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-      <p>Bootstrap</p>
-    </div>
-  </div>
-</section>
 
 
-  <!-- CONTACT -->
-<section class="section" id="contact">
-  <h2>Contact Me</h2>
-  <div class="social-icons">
-    <a href="mailto:rosalesjuvan1108@gmail.com" target="_blank" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://www.facebook.com/nnav.08" target="_blank" aria-label="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/awsdvann/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@nnavvlr?lang=en" target="_blank" aria-label="TikTok">
-      <i class="fab fa-tiktok"></i>
-    </a>
-  </div>
-</section>
+
+      </article>
 
 
-  <!-- SCRIPTS -->
-  <script src="main.js"></script>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        
+            <h3 class="h3">Education</h3>
+          </div>
+        
+          <ol class="timeline-list">
+        
+            <li class="timeline-item">
+        
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Information Technology (BSIT) — Eastern Visayas State University</h4>
+        
+              <span>2024 — 2025</span>
+        
+              <p class="timeline-text">
+                Graduated Cum Laude, demonstrating academic excellence throughout the course.
+              </p>
+        
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Finished Senior High School</h4>
+              <span>2020 — 2021</span>
+              <p class="timeline-text">
+                Graduated from ACLC College of Tacloban with a specialization in TVL Programming Strand, focusing on Java programming and software development fundamentals.
+              </p>
+            </li>
+            
+        
+            <!-- <li class="timeline-item">
+        
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+        
+              <span>2006 — 2007</span>
+        
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..
+              </p>
+        
+            </li>
+        
+            <li class="timeline-item">
+        
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+        
+              <span>2002 — 2004</span>
+        
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+              </p>
+        
+            </li> -->
+        
+          </ol>
+        
+        </section>
+        
+        
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        
+            <h3 class="h3">Academic and OJT Experience</h3>
+          </div>
+        
+          <ol class="timeline-list">
+        
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">EVSU IESMS (Integrated Extension Services Management System)</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Developed a web-based system to streamline the management of extension service programs, including scheduling, reporting, and monitoring for EVSU.
+              </p>
+            </li>
+            
+        
+            <li class="timeline-item">
+        
+              <h4 class="h4 timeline-item-title">EVSU Dean’s Office System</h4>
+        
+              <span>2023 — 2024</span>
+        
+              <p class="timeline-text">
+                Created a digital management system to streamline document processing, scheduling, and communication for the Dean’s Office, enhancing workflow and data tracking.
+              </p>
+        
+            </li>
+        
+            <li class="timeline-item">
+        
+              <h4 class="h4 timeline-item-title">EVSU COE Library System</h4>
+        
+              <span>2023 — 2024</span>
+        
+              <p class="timeline-text">
+                Designed and implemented an online library system for the College of Engineering, allowing efficient cataloging, borrowing, and return of library materials.
+              </p>
+        
+            </li>
+        
+          </ol>
+        
+        </section>
+        
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Technical Support</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="EVSU-IESMS.jpg" alt="evsuiesms" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EVSU-IESMS</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="deansoffice.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EVSU COE Deans Office System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="storystream.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Story Stream : Anawahay National Highschool</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
